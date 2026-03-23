@@ -1,6 +1,6 @@
-# CampusFinder - Global University Explorer 📖
+# FetchUni: A RESTful University Explorer📖
 
-CampusFinder is a dynamic, JavaScript website designed to help prospective students research, filter, and discover universities across the globe using real-time API data.
+FetchUni is a dynamic, JavaScript website designed to help prospective students research, filter, and discover universities across the globe using real-time API data.
 
 ## ✨ Features & Functionality
 - **Live Search**: Find specific institutions instantly. Built using the JS Array `.filter()` method.
