@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetchUni</title>
+</head>
+<body>
+    <header>
+        <h1>FetchUni</h1>
+        <h3>Fetch the Future of Education.</h3>
+    </header>
+    
+    <main class="container">
+        <section class="controls">
+            <input type="text" id="search-input" placeholder="Search universities">
+            <select id="country-select">
+                <option value="All">All Countries</option>
+            </select>
+            <button id="sort-btn">Sort A-Z </button>
+        </section>
+
+        <div class="grid-layout">
+            <section class="results-section">
+                <div class="section-header">
+                    <h2>Universities <span id="results-count"></span></h2>
+                </div>
+                <div id="loading" class="loading">Fetching universities... Please wait.</div>
+                <div id="university-list" class="card-grid">
+                </div>
+            </section>
+
+            <section class="shortlist-section">
+                <h2>My Shortlist</h2>
+                <div id="shortlist" class="card-grid shortlist-grid">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
