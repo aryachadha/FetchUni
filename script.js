@@ -18,7 +18,7 @@ async function fetchUniversities() {
         loadingEl.style.display = 'block';
         universityList.innerHTML = ''; 
 
-        const response = await fetch('https://universities.hipolabs.com/search');
+        const response = await fetch('https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json');
         universities = await response.json();
         const uniqueCountries = [...new Set(universities.map(uni => uni.country))].sort();
         
