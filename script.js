@@ -18,7 +18,7 @@ async function fetchUniversities() {
         loadingEl.style.display = 'block';
         universityList.innerHTML = ''; 
 
-        const response = await fetch('http://universities.hipolabs.com/search');
+        const response = await fetch('https://universities.hipolabs.com/search');
         universities = await response.json();
         const uniqueCountries = [...new Set(universities.map(uni => uni.country))].sort();
         
